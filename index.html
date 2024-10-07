@@ -12,9 +12,47 @@
   <main>
     <h2>Add Employee</h2>
     <h2>Employees</h2>
+
+
+    <form id="employeeForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" data-testid="firstNameInput" required />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" data-testid="lastNameInput" required />
+
+      <label for="idNumber">ID Number:</label>
+      <input type="text" id="idNumber" data-testid="idInput" required />
+
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" id="jobTitle" data-testid="titleInput" required />
+
+      <label for="annualSalary">Annual Salary:</label>
+      <input type="number" id="annualSalary" data-testid="annualSalaryInput" required />
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+
+    <table id="employeeTbl">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID Number</th>
+          <th>Job Title</th>
+          <th>Annual Salary</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="employeeTblbd"></tbody>
+    </table>
+
   </main>
   <footer>
     <p>Total Monthly</p>
   </footer>
+
+  <script src="client.js"></script>
 </body>
 </html>
